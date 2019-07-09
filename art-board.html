@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Canvas Tutorial</title>
+		<style>
+			body{
+				margin:100px auto;
+				text-align: center;
+			}
+			#my-canvas{
+				border:3px solid #d3d3d3;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="dashboard">
+			<input type="button" value="Free Hand" class="control-btn" id="ab-freehand">
+			<input type="button" value="Line" class="control-btn" id="ab-line">
+			<input type="button" value="Rect" class="control-btn" id="ab-rect">
+			<input type="button" value="Circle" class="control-btn" id="ab-circle">
+			<input type="button" value="Eraser" class="control-btn" id="ab-eraser">
+			Fill Color <input type="color" name="fill-color" class="color-btn" id="fill-color">
+			Stroke Color <input type="color" name="stroke-color" class="color-btn" id="stroke-color">
+		</div>
+		<div>
+			<div id="option-menu">
+
+			</div>
+			<div id="paint">
+			<canvas id="my-canvas" width="700" height="450"></canvas>
+</div>
+		</div>
+
+		<script src="art-board.js"></script>
+	</body>
+
+</html>
